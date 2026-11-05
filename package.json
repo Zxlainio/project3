@@ -1,0 +1,24 @@
+{
+  "name": "key-assembly-production-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test:rules": "node tests/businessRules.test.mjs",
+    "test:history": "node tests/historyService.test.mjs",
+    "start:history": "node server/index.js",
+    "check:live": "node scripts/liveDashboardCheck.mjs",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "echarts": "^6.0.0",
+    "fflate": "^0.8.3",
+    "lucide": "^0.468.0",
+    "mqtt": "^5.15.2"
+  },
+  "devDependencies": {
+    "vite": "^7.1.1"
+  }
+}
